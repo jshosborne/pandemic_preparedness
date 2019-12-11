@@ -70,9 +70,9 @@ for (i in 1:nrow(expmt.polys)){
 }
   
 if (f_name!='none') {
-  temp_dir <- paste0('/ihme/geospatial/pandemics/mers/temp_shapefiles_', f_name, '_', expmt_idx)
+  temp_dir <- paste0('', f_name, '_', expmt_idx)
 } else {
-  temp_dir <- paste0('/ihme/geospatial/pandemics/mers/temp_shapefiles_', expmt_idx)
+  temp_dir <- paste0('', expmt_idx)
 }
   
 com <- combine.polys_buffs(expmt.polys, area_max, temp_dir)
